@@ -3,7 +3,10 @@ import './index.scss';
 
 const Home = () => {
   return ( 
-    <h1>ABOUT ME</h1>
+    <h1>
+      <br />
+      ABOUT ME
+    </h1>
    )
 }
  
