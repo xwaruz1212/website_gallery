@@ -1,0 +1,74 @@
+.nav-bar {
+    background-color: #a8dadc;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    top: 0px;
+    z-index: 3;
+    min-height: fit-content;
+
+
+    nav {
+        display: block;
+        text-align: center;
+        position: absolute;
+        height: 210px;
+        bottom: 0%; left: 700px;
+        margin-bottom: -160px;
+      
+        a {
+          font-size: 30px;
+          color:#000c1e;
+          display: inline-block;
+          line-height: 50px;
+          width: 70px;
+          position: relative;
+          text-decoration: none;
+      
+          i {
+            transition: all 0.3s ease-out;
+          }
+      
+          &:hover {
+            color: #e63946;
+      
+            svg {
+              opacity: 0;
+            }
+            &:after {
+              opacity: 1;
+            }
+          }
+      
+          &:after {
+            content: '';
+            font-size: 20px;
+            letter-spacing: 2px;
+            position: absolute;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            transition: all 0.3s ease-out;
+          }
+      
+          &:first-child {
+            &:after {
+              content: 'HOME';
+            }
+          }
+        }
+        a.Books-link {
+          &:after {
+            content: 'BOOKS';
+          }
+        }
+        a.Gallery-link {
+          &:after {
+            content: 'GALLERY';
+          }
+        }
+      }
+
+}
