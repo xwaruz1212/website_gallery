@@ -1,11 +1,14 @@
 import React from 'react';
+import './index.scss';
 
 const Gallery = () => {
-    return ( 
+    return (
+      <div className='i-center'>
+        <br />
         <h1>
-            <br />
-            Anything
+            My Paintings
         </h1>
+      </div>
      );
 }
  
