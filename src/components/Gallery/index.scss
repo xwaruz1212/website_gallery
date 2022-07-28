@@ -1,7 +1,39 @@
-.i-center{
-    h1{
-        font-size: 40px;
-        margin-top: 70px;
-        margin-left: 44%;
+.image-cont {
+
+    .img {
+        position: absolute;
+        width: 600px;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        top:50%;
+        left:50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
-}
+  }
+  .right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
