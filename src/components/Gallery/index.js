@@ -5,16 +5,40 @@ import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 
 
 class Gallery extends React.Component {
-  state = {  }
-  render() { 
+  state = {
+     current: Paintings[0],
+     index:0,
+  }
+
+  handleNextSlide = () => {
+    this.setState({
+      index: this.state.index +1,
+      current: Paintings[this.state.index + 1],
+      
+      
+    })
+    
+  }
+
+  handlePrevSlide = () => {
+    this.setState({
+      index: this.state.index -1,
+      current: Paintings[this.state.index -1],
+      
+      
+    })
+    
+  }
+  render() {
+
     return (
       <> 
       <div className='image-cont'>
-      <img src={Paintings} alt="" className='img'/>
+      <img src={this.state.current} alt="" className='img'/>
       </div>
       <section>
-        <FaArrowAltCircleLeft className='left-arrow'/>
-        <FaArrowAltCircleRight className='right-arrow'/>
+        <FaArrowAltCircleLeft onClick={this.handlePrevSlide} className='left-arrow'/>
+        <FaArrowAltCircleRight onClick={this.handleNextSlide} className='right-arrow'/>
       </section>
       </>
      );
