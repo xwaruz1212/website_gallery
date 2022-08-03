@@ -1,13 +1,13 @@
 .page {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position:static;
 }
-
-  .page::after {
-    content: "";
-    background-image: url(../../assets/paintings/img1.png);
-    opacity: 0.5;
+  
+.page::after {
+    content: '';
+    background-image: url(../../assets/images/background.png);
+    opacity: 0.7;
     top: 0;
     left: 0;
     bottom: 0;
