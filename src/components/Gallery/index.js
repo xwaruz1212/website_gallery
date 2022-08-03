@@ -13,7 +13,7 @@ class Gallery extends React.Component {
   handleNextSlide = () => {
     this.setState({
       index: this.state.index +1,
-      current: Paintings[this.state.index + 1],
+      current: Paintings[this.state.index + 1],  
       
       
     })

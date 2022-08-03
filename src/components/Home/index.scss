@@ -1,9 +1,16 @@
+
+.head {
+  font-size: 150px;
+  color:#264653;
+  font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
 .i-img{
       position: absolute;
       height: 400px;
       width: 360px;
       display: flex;
-        top:50%;
+        top:60%;
         left:50%;
         -webkit-transform: translate(-10%, -50%);
         -moz-transform: translate(-10%, -50%);
@@ -13,26 +20,17 @@
     }
 .text {
   position: absolute;
-  font-style: italic;
-  margin-top: 160px; left: 250px; right: 880px;
-  text-align: left;
+  margin-top: 60px; left: 270px; right: 670px;
+  background-color: rgba(255, 255, 255, 0.477);
 
-
-    h1{
-      font-size: 53px;
-        font-family: 'Coolvetica';
-        color: #264653;
-        font-weight: 400;
-        margin-top: 0;
-        position: relative;
-        margin-bottom: 40px;
-        left: -10px;
-        text-transform: uppercase;
-    }
     h2{
-      color: #264653;
+      color: #030306b9;
       font-size: 19px;
+      text-align: center;
+      margin-left : 40px;
+      margin-right : 40px;
+      margin-top : 40px;
+      margin-bottom : 40px;
     }
-
     
   }

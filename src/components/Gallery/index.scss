@@ -2,13 +2,13 @@
 
     .img {
         position: absolute;
-        width: 1000px;
-        height: 600px;
+        width: 1100px;
+        height: 660px;
         justify-content: center;
         align-items: center;
         display: flex;
         top:50%;
-        left:50%;
+        left:55%;
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -19,7 +19,7 @@
   .right-arrow {
     position: absolute;
     top: 50%;
-    right: 32px;
+    right: 40px;
     font-size: 3rem;
     color: #000;
     z-index: 10;
@@ -30,10 +30,11 @@
   .left-arrow {
     position: absolute;
     top: 50%;
-    left: 32px;
+    left: 182px;
     font-size: 3rem;
     color: #000;
     z-index: 10;
     cursor: pointer;
     user-select: none;
   }
+  
