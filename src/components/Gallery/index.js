@@ -31,17 +31,45 @@ class Gallery extends React.Component {
   }
   render() {
 
-    return (
-      <> 
-      <div className='image-cont'>
-      <img src={this.state.current} alt="" className='img'/>
-      </div>
-      <section>
-        <FaArrowAltCircleLeft onClick={this.handlePrevSlide} className='left-arrow'/>
-        <FaArrowAltCircleRight onClick={this.handleNextSlide} className='right-arrow'/>
-      </section>
-      </>
-     );
+    if (this.state.index === 0){
+      return (
+        <> 
+        <div className='image-cont'>
+        <img src={this.state.current} alt="" className='img'/>
+        </div>
+        <section>
+          <FaArrowAltCircleRight onClick={this.handleNextSlide} className='right-arrow'/>
+        </section>
+        </>
+       );
+    }
+    if (this.state.index === Paintings.length -1){
+      return (
+        <> 
+        <div className='image-cont'>
+        <img src={this.state.current} alt="" className='img'/>
+        </div>
+        <section>
+          <FaArrowAltCircleLeft  onClick={this.handlePrevSlide} className='left-arrow'/>
+        </section>
+        </>
+       );
+    }
+    else{
+      return (
+        <> 
+        <div className='image-cont'>
+        <img src={this.state.current} alt="" className='img'/>
+        </div>
+        <section>
+          <FaArrowAltCircleLeft  onClick={this.handlePrevSlide} className='left-arrow'/>
+          <FaArrowAltCircleRight onClick={this.handleNextSlide} className='right-arrow'/>
+        </section>
+        </>
+       );
+    }
+
+      
   }
 }
  

@@ -24,6 +24,10 @@
           width: 170px;
           position: relative;
           text-decoration: none;
+
+          svg {
+            color: #ffffffb6;
+          }
           
       
           i {
@@ -44,7 +48,7 @@
           &:after {
             content: '';
             font-size: 20px;
-            letter-spacing: 5px;
+            letter-spacing: 10px;
             position: absolute;
             bottom: 0px;
             display: block;
