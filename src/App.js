@@ -3,7 +3,7 @@ import Home from './components/Home'
 import Books from './components/Books'
 import Gallery from './components/Gallery'
 import Layout from './components/Layout'
-
+import './index.scss'
 
 function App() {
   return (

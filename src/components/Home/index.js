@@ -4,7 +4,7 @@ import MakisPhoto from '../../assets/images/Makis-Photo.png'
 
 const Home = () => {
   return (
-    <>
+    <div className='main'>
       <section className='head'>
       MAKIS LAZOS
       </section>
@@ -20,7 +20,7 @@ const Home = () => {
       <div>
         <img src={MakisPhoto} alt="" className="i-img" />
       </div>
-    </>
+    </div>
   )
 }
 

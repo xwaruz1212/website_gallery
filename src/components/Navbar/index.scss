@@ -78,6 +78,16 @@
             color: #ffff;
           }
         }
+        
       }
-
+      .Menu-button{
+        position: absolute;
+        top:0;
+        right:0;
+        padding:200;
+        background: transparent;
+        border:0;
+        font-size: 30px;
+        color:#ffff;
+      }
 }
