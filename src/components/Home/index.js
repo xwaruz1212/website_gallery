@@ -6,16 +6,15 @@ const Home = () => {
   return (
     <>
       <section className='head'>
-        MAKIS LAZOU
+      MAKIS LAZOS
       </section>
       <div className='text'>
         <h2>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          I am Makis Lazos from Achna in Cyprus where I was born on the 15th of
+        February 1945.
+          I am besides other things an amateur writer. I have written and illustrated
+        seven books mostly poetry and biographies that have given me great pleasure
+        in creating them. I have also painted a several dozen of paintings. On this site all of You can now read my books and see my paintings.
         </h2>
       </div>
       <div>

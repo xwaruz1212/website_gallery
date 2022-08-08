@@ -1,16 +1,16 @@
 .title{
     position: absolute;
     font-size: 150px;
-    color:#264653a2;
+    color:#264653;
     font-family :'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align:center;
     left: 30%;
 
   }
 
-  .img-left {
-    width: 240px;
-    height: 360px;
+  .img-one {
+    width: 140px;
+    height: 200px;
     position: absolute;
     display: flex;
         top:60%;
@@ -19,11 +19,24 @@
         -moz-transform: translate(-10%, -50%);
         -ms-transform: translate(-10%, -50%);
         -o-transform: translate(-10%, -50%);
-        transform: translate(60%, -50%);
+        transform: translate(40%, -120%);
   }
-  .img-right {
-    width: 240px;
-    height: 360px;
+  .img-two {
+    width: 140px;
+    height: 200px;
+    position: absolute;
+    display: flex;
+        top:60%;
+        left:50%;
+        -webkit-transform: translate(-100%, -50%);
+        -moz-transform: translate(-10%, -50%);
+        -ms-transform: translate(-10%, -50%);
+        -o-transform: translate(-10%, -50%);
+        transform: translate(-100%, -120%);
+  }
+  .img-three {
+    width: 140px;
+    height: 200px;
     position: absolute;
     display: flex;
         top:60%;
@@ -32,5 +45,33 @@
         -moz-transform: translate(-10%, -50%);
         -ms-transform: translate(-10%, -50%);
         -o-transform: translate(-10%, -50%);
-        transform: translate(-130%, -50%);
+        transform: translate(-170%, 10%);
+  }
+
+  .img-four {
+    width: 140px;
+    height: 200px;
+    position: absolute;
+    display: flex;
+        top:60%;
+        left:50%;
+        -webkit-transform: translate(-10%, -50%);
+        -moz-transform: translate(-10%, -50%);
+        -ms-transform: translate(-10%, -50%);
+        -o-transform: translate(-10%, -50%);
+        transform: translate(-30%, 10%);
+  }
+
+  .img-five {
+    width: 140px;
+    height: 200px;
+    position: absolute;
+    display: flex;
+        top:60%;
+        left:50%;
+        -webkit-transform: translate(-10%, -50%);
+        -moz-transform: translate(-10%, -50%);
+        -ms-transform: translate(-10%, -50%);
+        -o-transform: translate(-10%, -50%);
+        transform: translate(110%, 10%);
   }
