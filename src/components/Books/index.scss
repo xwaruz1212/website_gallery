@@ -75,3 +75,32 @@
         -o-transform: translate(-10%, -50%);
         transform: translate(110%, 10%);
   }
+
+  @media screen and (max-width: "1000px") {
+    .title{
+      font-size: 80px;
+      left: 20%;
+    }
+    .img-one {
+      width: 70px;
+    height: 100px;
+    }
+    .img-two {
+      width: 70px;
+    height: 100px;
+    }
+    .img-three {
+      width: 70px;
+    height: 100px;
+    }
+    .img-four {
+      width: 70px;
+    height: 100px;
+    }
+    .img-five {
+      width: 70px;
+    height: 100px;
+    }
+
+  }
+

@@ -32,7 +32,6 @@ import img31 from '../../assets/paintings/img31.png'
 import img32 from '../../assets/paintings/img32.png'
 import img33 from '../../assets/paintings/img33.png'
 import img34 from '../../assets/paintings/img34.png'
-import img35 from '../../assets/paintings/img35.png'
 import img36 from '../../assets/paintings/img36.png'
 import img37 from '../../assets/paintings/img37.png'
 import img38 from '../../assets/paintings/img38.png'
@@ -92,7 +91,6 @@ const Paintings = [
     img32,
     img33,
     img34,
-    img35,
     img36,
     img37,
     img38,
