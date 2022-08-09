@@ -7,24 +7,37 @@
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;
     text-align: center;
+    margin-left: 10%;
   }
 
-  .i-img {
-    width: 440px;
-    -webkit-transform: translate(250%, -50%);
-        -moz-transform: translate(250%, -50%);
-        -ms-transform: translate(250%, -50%);
-        -o-transform: translate(250%, -50%);
-        transform: translate(200%, -60%);
+  .l-img {
+    max-width: 360px;
+    max-height: 240px;
+    -webkit-transform: translate(340%, -170%);
+        -moz-transform: translate(340%, -170%);
+        -ms-transform: translate(340%, -170%);
+        -o-transform: translate(340%, -170%);
+        transform: translate(340%, -70%);
+    
+  }
+
+  .r-img {
+    max-width: 360px;
+    max-height: 240px;
+    -webkit-transform: translate(220%, -170%);
+        -moz-transform: translate(220%, -170%);
+        -ms-transform: translate(220%, -170%);
+        -o-transform: translate(220%, -170%);
+        transform: translate(220%, -70%);
     
   }
 
   .text {
     background-color: rgba(255, 255, 255, 0.253);
-    margin-right: 44%;
-    margin-left: 20%;
-    margin-top: 10%;
+    margin-right: 25%;
+    margin-left: 35%;
     justify-content: left;
+    transform: translate(0%, 180%);
 
 
     h2 {
@@ -38,7 +51,7 @@
   }
 }
 
-@media screen and (max-width: "1000px") {
+@media screen and (max-width: "600px") {
   .main{
     display: flex;
     flex-direction: column;
@@ -46,15 +59,23 @@
     align-items: center;
 
     .head {
-      font-size: 35px;
+      font-size: 60px;
       letter-spacing: 5px;
       margin-top: 5%;
     }
 
-    .i-img {
-      height: 230px;
-      width: 220px;
-      right: 152%;
+    .l-img {
+      max-width: 140px;
+      max-height: 150px;
+      left: -80%;
+      top: 46%;
+      position: absolute;
+    }
+
+    .r-img {
+      max-width: 180px;
+      max-height: 150px;
+      right: 110%;
       top: 46%;
       position: absolute;
     }
@@ -62,8 +83,8 @@
     .text {
       width:85%;
       line-height: 100%;
-      margin-top: 95%;
-      margin-left: 51%;
+      margin-top: 5%;
+      margin-left: 35%;
 
   
       h2 {

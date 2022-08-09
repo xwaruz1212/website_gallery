@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.scss';
-import MakisPhoto from '../../assets/images/Makis-Photo.png'
+import MakisPhoto from '../../assets/images/MakisPhoto.jpg'
+import Makis from '../../assets/images/Makis2.jpg'
 
 const Home = () => {
   return (
@@ -18,7 +19,8 @@ const Home = () => {
         </h2>
       </div>
       <div>
-        <img src={MakisPhoto} alt="" className="i-img" />
+        <img src={MakisPhoto} alt="" className="l-img" />
+        <img src={Makis} alt="" className="r-img" />
       </div>
     </div>
   )
