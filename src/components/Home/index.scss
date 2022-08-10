@@ -67,17 +67,17 @@
     .l-img {
       max-width: 140px;
       max-height: 150px;
-      left: -80%;
+      left: -120%;
       top: 46%;
-      position: absolute;
+      position: relative;
     }
 
     .r-img {
       max-width: 180px;
       max-height: 150px;
-      right: 110%;
+      right: 130%;
       top: 46%;
-      position: absolute;
+      position: relative;
     }
 
     .text {
@@ -85,6 +85,7 @@
       line-height: 100%;
       margin-top: 5%;
       margin-left: 35%;
+      position: relative;
 
   
       h2 {

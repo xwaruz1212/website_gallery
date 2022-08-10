@@ -11,13 +11,13 @@ import {
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const [menuOpened, setMenuOpened] = useState(true);
+  const [menuOpened, setMenuOpened] = useState(false);
 
   return (
     <div
       className="nav-bar"
       style={{
-        left: menuOpened ? 0 : "-130px",
+        left: menuOpened ? 1 : "-130px",
       }}
     >
       <button
@@ -36,18 +36,22 @@ const Navbar = () => {
           pointerEvents: menuOpened ? "all" : "none",
         }}
       >
-        <NavLink exact="true" activeclassname="active" to="/">
+        <NavLink onClick={() => setMenuOpened(!menuOpened)} exact="true" activeclassname="active" to="/">
           <FontAwesomeIcon icon={faHome} />
         </NavLink>
-        <NavLink activeclassname="active" className="Books-link" to="/Books">
-          <FontAwesomeIcon icon={faBookReader} />
+        <NavLink 
+          onClick={() => setMenuOpened(!menuOpened)} 
+          activeclassname="active" 
+          className="Books-link" 
+          to="/Books">
+            <FontAwesomeIcon icon={faBookReader} />
         </NavLink>
         <NavLink
+          onClick={() => setMenuOpened(!menuOpened)}
           activeclassname="active"
           className="Gallery-link"
-          to="/Gallery"
-        >
-          <FontAwesomeIcon icon={faPalette} />
+          to="/Gallery">
+            <FontAwesomeIcon icon={faPalette} />
         </NavLink>
       </nav>
     </div>
