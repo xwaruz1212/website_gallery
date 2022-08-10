@@ -17,7 +17,7 @@ const Navbar = () => {
     <div
       className="nav-bar"
       style={{
-        left: menuOpened ? 1 : "-130px",
+        left: menuOpened ? 1 : "-120px",
       }}
     >
       <button
