@@ -1,60 +1,75 @@
-import React, { useState } from "react";
-import "./index.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import { FaBars, FaHome, FaBookReader, FaPalette } from "react-icons/fa";
 import {
-  faHome,
-  faPalette,
-  faBookReader,
-  faClose,
-  faBars,
-} from "@fortawesome/free-solid-svg-icons";
-import { NavLink } from "react-router-dom";
+  Nav,
+  NavbarContainer,
+  NavLogo,
+  MobileIcon,
+  NavMenu,
+  NavItem,
+  NavLink,
+} from "./NavbarElements";
+import { animateScroll as scroll } from "react-scroll";
 
-const Navbar = () => {
-  const [menuOpened, setMenuOpened] = useState(false);
-
+const Navbar = ({ toggle }) => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
   return (
-    <div
-      className="nav-bar"
-      style={{
-        left: menuOpened ? 1 : "-120px",
-      }}
-    >
-      <button
-        className="Menu-button"
-        onClick={() => setMenuOpened(!menuOpened)}
-      >
-        {menuOpened ? (
-          <FontAwesomeIcon icon={faClose} />
-        ) : (
-          <FontAwesomeIcon icon={faBars} />
-        )}
-      </button>
+    <>
+      <Nav>
+        <NavLogo to="/" onClick={toggleHome}>
+          Makis Lazos
+        </NavLogo>
+        <NavbarContainer>
+          <MobileIcon onClick={toggle}>
+            <FaBars />
+          </MobileIcon>
+          <NavMenu>
+            <NavItem>
+              <NavLink
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-90}
+                duration={800}
+                delay={100}
+              >
+                Home
+                <FaHome />
 
-      <nav
-        style={{
-          pointerEvents: menuOpened ? "all" : "none",
-        }}
-      >
-        <NavLink onClick={() => setMenuOpened(!menuOpened)} exact="true" activeclassname="active" to="/">
-          <FontAwesomeIcon icon={faHome} />
-        </NavLink>
-        <NavLink 
-          onClick={() => setMenuOpened(!menuOpened)} 
-          activeclassname="active" 
-          className="Books-link" 
-          to="/Books">
-            <FontAwesomeIcon icon={faBookReader} />
-        </NavLink>
-        <NavLink
-          onClick={() => setMenuOpened(!menuOpened)}
-          activeclassname="active"
-          className="Gallery-link"
-          to="/Gallery">
-            <FontAwesomeIcon icon={faPalette} />
-        </NavLink>
-      </nav>
-    </div>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                to="books"
+                spy={true}
+                smooth={true}
+                offset={-90}
+                duration={800}
+                delay={100}
+              >
+                Books
+                <FaBookReader />
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
+                to="gallery"
+                spy={true}
+                smooth={true}
+                offset={-90}
+                duration={800}
+                delay={100}
+              >
+                Gallery
+                <FaPalette />
+              </NavLink>
+            </NavItem>
+          </NavMenu>
+        </NavbarContainer>
+      </Nav>
+    </>
   );
 };
 
