@@ -8,11 +8,16 @@ export const StartContainer = styled.div`
     justify-content: center;
     align-items: center;
     background: white;
+    border-bottom: 1rem solid black;
+    z-index: 1;
 `;
 
 export const StartH2 = styled.h2`
     color: black;
-    font-size: 4vh;
+    font-size: 8vh;
+    position: absolute;
+    top: 14vh;
+    text-transform: uppercase;
 `;
 
 export const ImageContainer = styled.div`
@@ -22,12 +27,15 @@ export const ImageContainer = styled.div`
     justify-content: center;
 `;
 
-export const Image = styled.image`
-    max-width: 8vw;
-    max-height: 12vh;
+export const Image = styled.img`
+    max-width: 34vw;
+    max-height: 40vh;
+    padding: 3vw;
 `;
 
 export const StartP = styled.p`
     color: black;
-    font-size: 2vh;
+    font-size: 3vh;
+    width: 40vw;
+    text-align: center;
 `;

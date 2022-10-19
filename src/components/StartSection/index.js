@@ -1,5 +1,4 @@
 import React from 'react';
-import './index.scss';
 import MakisPhoto from '../../assets/images/MakisPhoto.jpg'
 import Makis from '../../assets/images/Makis2.jpg'
 import { Image, ImageContainer, StartContainer, StartH2, StartP } from './StartCompo';
