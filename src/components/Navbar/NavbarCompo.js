@@ -3,13 +3,7 @@ import { Link as LinkRouter } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: rgb(12, 22, 79);
-  background: linear-gradient(
-    90deg,
-    rgba(12, 22, 79, 1) 0%,
-    rgba(29, 49, 117, 1) 100%,
-    rgba(49, 59, 100, 1) 100%
-  );
+  background: black;
   height: 12vh;
   width: 100%;
   display: flex;
@@ -19,8 +13,6 @@ export const Nav = styled.nav`
   position: fixed;
   top: 0;
   z-index: 100;
-  border: 1px solid #0c164f;
-  border-radius: 0rem 0rem 10rem 0rem;
   overflow: hidden;
 
   @media screen and (max-width: 1000px) {
