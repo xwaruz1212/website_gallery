@@ -1,10 +1,9 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-import Home from './components/Home'
-import Books from './components/Books'
-import Gallery from './components/Gallery'
-import { useState } from 'react';
-
+import React, { useState } from "react";
+import Books from "../components/Books";
+import Gallery from "../components/Gallery";
+import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
+import Start from "../components/StartSection";
 
 const Home = () => {
     const [isOpen, setisOpen] = useState(false);
@@ -16,7 +15,7 @@ const Home = () => {
         <>
             <Navbar toggle={toggle} />
             <Sidebar isOpen={isOpen} toggle={toggle} />
-            <Home />
+            <Start />
             <Books />
             <Gallery />
         </>
