@@ -1,24 +1,17 @@
-import React from "react";
-import styled, { keyframes } from "styled-components";
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
 
 export const ImageP = styled.img`
-  max-width: 15vw;
-  border-radius: 0 1rem 1rem 0;
+  max-width: 30vw;
+  max-height: 60vh;
+  border: 1rem solid black;
+  border-radius: 1rem;
 
   @media screen and (max-width: 768px) {
     max-width: 20vh;
   }
 `;
 
-export const BooksP = styled.p`
-  font-size: 4vh;
-  color: #fff;
-  text-align: center;
-
-  @media screen and (max-width: 768px) {
-    font-size: 3vh;
-  }
-`;
 
 export const ArrowLeft = styled.button`
   background: transparent;
@@ -73,13 +66,12 @@ const Fade = styled.div`
   display: ${props => props.active ? 'block' : 'none'};
 `;
 
-const ImageContent = ({ book, description, active }) => {
-  return (
-    <Fade active={active}>
-      <ImageP src={book} />
-      <BooksP>{description}</BooksP>
-    </Fade>
-  );
+const ImageContent = ({ painting, active }) => {
+    return (
+        <Fade active={active}>
+            <ImageP src={painting} />
+        </Fade>
+    );
 };
 
 export default ImageContent;

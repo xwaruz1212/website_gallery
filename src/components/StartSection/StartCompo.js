@@ -15,10 +15,15 @@ export const StartContainer = styled.div`
 
 export const StartH2 = styled.h2`
     color: black;
-    font-size: 8vh;
-    position: absolute;
-    top: 14vh;
+    font-size: 7vh;
     text-transform: uppercase;
+    margin-top: 10vh;
+    transition-duration: 3s;
+    cursor: pointer;
+
+    &:hover{
+        color: white;
+    }
 `;
 
 export const ImageContainer = styled.div`
@@ -29,9 +34,10 @@ export const ImageContainer = styled.div`
 `;
 
 export const Image = styled.img`
-    max-width: 34vw;
-    max-height: 40vh;
-    padding: 3vw;
+    max-width: 45vw;
+    max-height: 42vh;
+    padding: 1vw;
+    border-radius: 1.5rem;
 `;
 
 export const StartP = styled.p`
@@ -39,4 +45,7 @@ export const StartP = styled.p`
     font-size: 3vh;
     width: 40vw;
     text-align: center;
+    background: rgba(128, 128, 128, 0.126);
+    padding: 0.4rem;
+    border-radius: .3rem;
 `;

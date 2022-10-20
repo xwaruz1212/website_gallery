@@ -34,10 +34,8 @@ const Navbar = ({ toggle }) => {
                 offset={-90}
                 duration={800}
                 delay={100} >
-                <FaHome />
+                <FaHome /> &nbsp;
                 Home
-
-
               </NavLink>
             </NavItem>
             <NavItem>
@@ -48,9 +46,8 @@ const Navbar = ({ toggle }) => {
                 offset={-90}
                 duration={800}
                 delay={100}>
-                <FaBookReader />
+                <FaBookReader /> &nbsp;
                 Books
-
               </NavLink>
             </NavItem>
             <NavItem>
@@ -61,9 +58,8 @@ const Navbar = ({ toggle }) => {
                 offset={-90}
                 duration={800}
                 delay={100} >
-                <FaPalette />
+                <FaPalette /> &nbsp;
                 Gallery
-
               </NavLink>
             </NavItem>
           </NavMenu>

@@ -111,5 +111,7 @@ const Paintings = [
     img57,
     img58
 ]
- 
+
+export const elmCnt = Paintings.length;
+
 export default Paintings;

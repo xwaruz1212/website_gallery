@@ -13,6 +13,7 @@ const BooksContainer = styled.div`
     justify-content: center;
     align-items: center;
     z-index: 2;
+    border-bottom: 1rem solid black;
 `;
 
 const BooksContent = styled.div`
@@ -28,6 +29,13 @@ const BooksH1 = styled.div`
     font-size: 10vh;
     color: black;
     letter-spacing: 0.5vw;
+    text-transform: uppercase;
+    transition-duration: 3s;
+    cursor: pointer;
+
+    &:hover{
+        color: white;
+    }
 `;
 
 const ImageContainer = styled.div`
@@ -52,32 +60,30 @@ const Books = () => {
     };
 
     return (
-        <React.Fragment>
-            <BooksContainer id="books">
-                <BooksContent>
-                    <BooksH1> My Books </BooksH1>
-                    <ImageContainer>
-                        {
-                            booksList.map((t, i) =>
-                                <ImageContent
-                                    key={i}
-                                    book={t}
-                                    description={descriptions[current]}
-                                    active={i === current ? true : false}
+        <BooksContainer id="books">
+            <BooksContent>
+                <BooksH1> My Books </BooksH1>
+                <ImageContainer>
+                    {
+                        booksList.map((t, i) =>
+                            <ImageContent
+                                key={i}
+                                book={t}
+                                description={descriptions[current]}
+                                active={i === current ? true : false}
 
-                                />)
-                        }
-                        <ArrowLeft>
-                            <FaAngleLeft onClick={prevItem} style={{ color: 'black' }} />
-                        </ArrowLeft>
-                        <ArrowRight>
-                            <FaAngleRight onClick={nextItem} style={{ color: 'black' }} />
-                        </ArrowRight>
+                            />)
+                    }
+                    <ArrowLeft>
+                        <FaAngleLeft onClick={prevItem} style={{ color: 'black' }} />
+                    </ArrowLeft>
+                    <ArrowRight>
+                        <FaAngleRight onClick={nextItem} style={{ color: 'black' }} />
+                    </ArrowRight>
 
-                    </ImageContainer>
-                </BooksContent>
-            </BooksContainer>
-        </React.Fragment>
+                </ImageContainer>
+            </BooksContent>
+        </BooksContainer>
     )
 }
 
