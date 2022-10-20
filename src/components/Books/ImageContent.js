@@ -13,7 +13,6 @@ export const BooksP = styled.p`
   font-size: 4vh;
   color: #fff;
   text-align: center;
-  align-self: center;
 
   @media screen and (max-width: 768px) {
     font-size: 3vh;

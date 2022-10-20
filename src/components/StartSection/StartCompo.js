@@ -7,7 +7,8 @@ export const StartContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: white;
+    background: rgb(137,150,201);
+    background: linear-gradient(180deg, rgba(137,150,201,1) 36%, rgba(255,255,255,1) 94%);
     border-bottom: 1rem solid black;
     z-index: 1;
 `;

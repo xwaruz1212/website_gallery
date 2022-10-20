@@ -20,9 +20,9 @@ export const booksList = [
 export const elmCnt = booksList.length;
 
 export const descriptions = [
-    <a href={TheKissPdf} target="_blank" rel="noopener noreferrer"> click here </a>,
-    <a href={SofianosPdf} target="_blank" rel="noopener noreferrer"> click here </a>,
-    <a href={Book2Pdf} target="_blank" rel="noopener noreferrer"> click here </a>,
-    <a href={MagicalWorldPdf} target="_blank" rel="noopener noreferrer"> click here </a>,
-    <a href={MagicMomentsPdf} target="_blank" rel="noopener noreferrer"> click here </a>
+    <a href={TheKissPdf} target="_blank" rel="noopener noreferrer"> The Kiss </a>,
+    <a href={SofianosPdf} target="_blank" rel="noopener noreferrer"> Sofianos </a>,
+    <a href={Book2Pdf} target="_blank" rel="noopener noreferrer"> ΑΧΝΙΩΤΙΚΕΣ ΑΝΑΜΝΗΣΕΙΣ </a>,
+    <a href={MagicalWorldPdf} target="_blank" rel="noopener noreferrer"> MagicalWorld </a>,
+    <a href={MagicMomentsPdf} target="_blank" rel="noopener noreferrer"> MagicMoments </a>
 ];

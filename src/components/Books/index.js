@@ -5,7 +5,8 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import ImageContent, { ArrowLeft, ArrowRight } from './ImageContent';
 
 const BooksContainer = styled.div`
-    background: white;
+    background: rgb(137,150,201);
+    background: linear-gradient(180deg, rgba(137,150,201,1) 36%, rgba(255,255,255,1) 94%);
     width: 100%;
     height: 100vh;
     display: flex;
