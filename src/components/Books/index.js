@@ -1,37 +1,83 @@
-import React from 'react';
-import MagicalWorld from '../../assets/images/MagicalWorld.png'
-import Sofianos from '../../assets/images/Sofianos.png'
-import Book2 from '../../assets/images/Book2.png'
-import TheKiss from '../../assets/images/TheKiss.png'
-import MagicMoments from '../../assets/images/MagicMoments.png'
-import './index.scss';
+import React, { useState } from 'react'
+import { booksList, descriptions, elmCnt } from './BooksArray';
+import styled from "styled-components";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import ImageContent, { ArrowLeft, ArrowRight } from './ImageContent';
+
+const BooksContainer = styled.div`
+    background: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+`;
+
+const BooksContent = styled.div`
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    
+`;
+
+const BooksH1 = styled.div`
+    text-align: center;
+    font-size: 10vh;
+    color: black;
+    letter-spacing: 0.5vw;
+`;
+
+const ImageContainer = styled.div`
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+`;
+
+
+const mod = (a, n) => a - n * Math.floor(a / n);
 
 const Books = () => {
-    return ( 
-        <>
-            <section className='title'>
-                MY BOOKS
-            </section>
-            <div>
-                <a href='https://drive.google.com/file/d/11TGRcWaG8tAMOS0ZiDw8JrtLaPEHaq3o/view?usp=sharing' target="_blank" rel="noopener noreferrer">
-                <img src={Sofianos} alt="" className='img-one'/>
-                </a>
-                <a href='https://drive.google.com/file/d/1ekwZGVzgSUKL726glMBEIPAd3YoHCXUo/view?usp=sharing'target="_blank" rel="noopener noreferrer">
-                <img src={TheKiss} alt="" className='img-two' />
-                </a>
-                <a href='https://drive.google.com/file/d/1iRBXCSjuSLPv-gYh-Wu4gqvi59cXHyqU/view?usp=sharing'target="_blank" rel="noopener noreferrer">
-                <img src={Book2} alt="" className='img-three' />
-                </a>
-                <a href='https://drive.google.com/file/d/1fOfXeyHRbk6ua3a783tVKmiL7JIDn-5i/view?usp=sharing'target="_blank" rel="noopener noreferrer">
-                <img src={MagicalWorld} alt="" className='img-four' />
-                </a>
-                <a href='https://drive.google.com/file/d/1PfbNiKkbKEa4JbXovbWBqTJpM3H_QF8g/view?usp=sharing'target="_blank" rel="noopener noreferrer">
-                <img src={MagicMoments} alt="" className='img-five' />
-                </a>
-            </div>
-         </>
+    const [current, setCurrent] = useState(0)
 
-     );
+    const nextItem = () => {
+        setCurrent((i) => mod(++i, elmCnt));
+    };
+
+    const prevItem = () => {
+        setCurrent((i) => mod(--i, elmCnt));
+    };
+
+    return (
+        <React.Fragment>
+            <BooksContainer id="books">
+                <BooksContent>
+                    <BooksH1> My Books </BooksH1>
+                    <ImageContainer>
+                        {
+                            booksList.map((t, i) =>
+                                <ImageContent
+                                    key={i}
+                                    book={t}
+                                    description={descriptions[current]}
+                                    active={i === current ? true : false}
+
+                                />)
+                        }
+                        <ArrowLeft>
+                            <FaAngleLeft onClick={prevItem} style={{ color: 'black' }} />
+                        </ArrowLeft>
+                        <ArrowRight>
+                            <FaAngleRight onClick={nextItem} style={{ color: 'black' }} />
+                        </ArrowRight>
+
+                    </ImageContainer>
+                </BooksContent>
+            </BooksContainer>
+        </React.Fragment>
+    )
 }
- 
-export default Books ;
+
+export default Books;
