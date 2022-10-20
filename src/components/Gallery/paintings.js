@@ -44,8 +44,6 @@ import img44 from '../../assets/paintings/img44.png'
 import img45 from '../../assets/paintings/img45.png'
 import img46 from '../../assets/paintings/img46.png'
 import img47 from '../../assets/paintings/img47.png'
-import img48 from '../../assets/paintings/img48.png'
-import img49 from '../../assets/paintings/img49.png'
 import img50 from '../../assets/paintings/img50.png'
 import img51 from '../../assets/paintings/img51.png'
 import img52 from '../../assets/paintings/img52.png'
@@ -53,7 +51,7 @@ import img53 from '../../assets/paintings/img53.png'
 import img54 from '../../assets/paintings/img54.png'
 import img55 from '../../assets/paintings/img55.png'
 import img56 from '../../assets/paintings/img56.png'
-import img57 from '../../assets/paintings/img57.png'
+import img57 from '../../assets/paintings/img57.jpg'
 import img58 from '../../assets/paintings/img58.png'
 
 const Paintings = [
@@ -103,8 +101,6 @@ const Paintings = [
     img45,
     img46,
     img47,
-    img48,
-    img49,
     img50,
     img51,
     img52,
