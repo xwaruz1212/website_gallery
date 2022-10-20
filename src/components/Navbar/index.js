@@ -8,7 +8,7 @@ import {
   NavMenu,
   NavItem,
   NavLink,
-} from "./NavbarElements";
+} from "./NavbarCompo";
 import { animateScroll as scroll } from "react-scroll";
 
 const Navbar = ({ toggle }) => {
@@ -33,10 +33,10 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 offset={-90}
                 duration={800}
-                delay={100}
-              >
-                Home
+                delay={100} >
                 <FaHome />
+                Home
+
 
               </NavLink>
             </NavItem>
@@ -47,10 +47,10 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 offset={-90}
                 duration={800}
-                delay={100}
-              >
-                Books
+                delay={100}>
                 <FaBookReader />
+                Books
+
               </NavLink>
             </NavItem>
             <NavItem>
@@ -60,10 +60,10 @@ const Navbar = ({ toggle }) => {
                 smooth={true}
                 offset={-90}
                 duration={800}
-                delay={100}
-              >
-                Gallery
+                delay={100} >
                 <FaPalette />
+                Gallery
+
               </NavLink>
             </NavItem>
           </NavMenu>
