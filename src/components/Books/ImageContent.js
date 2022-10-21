@@ -1,22 +1,29 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
-export const ImageP = styled.img`
+export const Image = styled.img`
   max-width: 15vw;
   border-radius: 0 1rem 1rem 0;
 
   @media screen and (max-width: 768px) {
-    max-width: 20vh;
+    max-width: 25vh;
   }
 `;
 
 export const BooksP = styled.p`
-  font-size: 4vh;
-  color: #fff;
+  font-size: 2.5vh;
+  color: black;
   text-align: center;
+  text-justify: newspaper;
+  flex-wrap: wrap;
+  max-width: 30vw;
+  font-style: italic;
+  font-weight: 200;
+  padding-top: 2vh;
 
   @media screen and (max-width: 768px) {
-    font-size: 3vh;
+    max-width: 90vw;
+    font-size: 2vh;
   }
 `;
 
@@ -31,8 +38,7 @@ export const ArrowLeft = styled.button`
 
   @media screen and (max-width: 768px) {
     font-size: 4rem;
-    top: 35vh;
-    left: 2vw;
+    left: 4vw;
   }
 `;
 
@@ -47,8 +53,7 @@ export const ArrowRight = styled.button`
 
   @media screen and (max-width: 768px) {
     font-size: 4rem;
-    top: 35vh;
-    right: 2vw;
+    right: 4vw;
   }
 `;
 
@@ -63,12 +68,12 @@ const fadeIn = keyframes`
 `;
 
 const Fade = styled.div`
-  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   animation: ${props => props.active ? fadeIn : false} 1s linear;
   display: ${props => props.active ? 'block' : 'none'};
 `;
@@ -76,7 +81,7 @@ const Fade = styled.div`
 const ImageContent = ({ book, description, active }) => {
   return (
     <Fade active={active}>
-      <ImageP src={book} />
+      <Image src={book} />
       <BooksP>{description}</BooksP>
     </Fade>
   );

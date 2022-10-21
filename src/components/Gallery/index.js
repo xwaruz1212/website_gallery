@@ -8,8 +8,7 @@ import ImageContent, { ArrowLeft, ArrowRight } from './ImageContent';
 const GalleryContainer = styled.div`
   width: 100%;
   height: 100vh;
-  background: rgb(137,150,201);
-  background: linear-gradient(180deg, rgba(137,150,201,1) 36%, rgba(255,255,255,1) 94%);
+  background: #fffdd0;
   text-align: center;
 `;
 
@@ -23,6 +22,11 @@ const GalleryH1 = styled.h1`
 
     &:hover{
         color: white;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 7vh;
+      margin-top: 3vh;
     }
 `;
 
@@ -48,7 +52,7 @@ const Gallery = () => {
   };
   return (
     <GalleryContainer id="gallery">
-      <GalleryH1> My Work </GalleryH1>
+      <GalleryH1> My Works </GalleryH1>
       <ImageContainer>
         {
           Paintings.map((t, i) =>
@@ -60,10 +64,10 @@ const Gallery = () => {
             />)
         }
         <ArrowLeft>
-          <FaAngleLeft onClick={prevSlide} style={{ color: 'black' }} />
+          <FaAngleLeft onClick={prevSlide} style={{ color: 'rgba(128, 128, 128, 0.579)' }} />
         </ArrowLeft>
         <ArrowRight>
-          <FaAngleRight onClick={nextSlide} style={{ color: 'black' }} />
+          <FaAngleRight onClick={nextSlide} style={{ color: 'rgba(128, 128, 128, 0.579)' }} />
         </ArrowRight>
 
       </ImageContainer>

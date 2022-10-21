@@ -1,14 +1,13 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
-export const ImageP = styled.img`
+export const Image = styled.img`
   max-width: 30vw;
   max-height: 60vh;
-  border: 1rem solid black;
-  border-radius: 1rem;
 
   @media screen and (max-width: 768px) {
-    max-width: 20vh;
+    max-width: 50vh;
+    max-height: 80vh;
   }
 `;
 
@@ -23,9 +22,8 @@ export const ArrowLeft = styled.button`
   left: 15vw;
 
   @media screen and (max-width: 768px) {
-    font-size: 4rem;
-    top: 35vh;
-    left: 2vw;
+    font-size: 4.5rem;
+    left: 1vw;
   }
 `;
 
@@ -39,9 +37,8 @@ export const ArrowRight = styled.button`
   right: 15vw;
 
   @media screen and (max-width: 768px) {
-    font-size: 4rem;
-    top: 35vh;
-    right: 2vw;
+    font-size: 4.5rem;
+    right: 1vw;
   }
 `;
 
@@ -64,14 +61,15 @@ const Fade = styled.div`
   align-items: center;
   animation: ${props => props.active ? fadeIn : false} 1s linear;
   display: ${props => props.active ? 'block' : 'none'};
+  animation-duration: 1s;
 `;
 
 const ImageContent = ({ painting, active }) => {
-    return (
-        <Fade active={active}>
-            <ImageP src={painting} />
-        </Fade>
-    );
+  return (
+    <Fade active={active}>
+      <Image src={painting} />
+    </Fade>
+  );
 };
 
 export default ImageContent;

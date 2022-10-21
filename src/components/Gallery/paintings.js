@@ -54,6 +54,7 @@ import img56 from '../../assets/paintings/img56.png'
 import img57 from '../../assets/paintings/img57.jpg'
 import img58 from '../../assets/paintings/img58.png'
 
+
 const Paintings = [
     img1,
     img2,
