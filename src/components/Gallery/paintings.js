@@ -53,6 +53,39 @@ import img55 from '../../assets/paintings/img55.png'
 import img56 from '../../assets/paintings/img56.png'
 import img57 from '../../assets/paintings/img57.jpg'
 import img58 from '../../assets/paintings/img58.png'
+import img59 from '../../assets/paintings/img59.jpeg'
+import img60 from '../../assets/paintings/img60.jpeg'
+import img61 from '../../assets/paintings/img61.jpeg'
+import img62 from '../../assets/paintings/img62.jpeg'
+import img63 from '../../assets/paintings/img63.jpeg'
+import img64 from '../../assets/paintings/img64.jpeg'
+import img65 from '../../assets/paintings/img65.jpeg'
+import img66 from '../../assets/paintings/img66.jpeg'
+import img67 from '../../assets/paintings/img67.jpeg'
+import img68 from '../../assets/paintings/img68.jpeg'
+import img69 from '../../assets/paintings/img69.jpeg'
+import img70 from '../../assets/paintings/img70.jpeg'
+import img71 from '../../assets/paintings/img71.jpeg'
+import img72 from '../../assets/paintings/img72.jpeg'
+import img73 from '../../assets/paintings/img73.jpeg'
+import img74 from '../../assets/paintings/img74.jpeg'
+import img75 from '../../assets/paintings/img75.jpeg'
+import img76 from '../../assets/paintings/img76.jpeg'
+import img77 from '../../assets/paintings/img77.jpeg'
+import img78 from '../../assets/paintings/img78.jpeg'
+import img79 from '../../assets/paintings/img79.jpeg'
+import img80 from '../../assets/paintings/img80.jpeg'
+import img81 from '../../assets/paintings/img81.jpeg'
+import img82 from '../../assets/paintings/img82.jpeg'
+import img83 from '../../assets/paintings/img83.jpeg'
+import img84 from '../../assets/paintings/img84.jpeg'
+import img85 from '../../assets/paintings/img85.jpeg'
+import img86 from '../../assets/paintings/img86.jpeg'
+import img87 from '../../assets/paintings/img87.jpeg'
+import img88 from '../../assets/paintings/img88.jpeg'
+import img89 from '../../assets/paintings/img89.jpeg'
+import img90 from '../../assets/paintings/img90.jpeg'
+import img91 from '../../assets/paintings/img91.jpeg'
 
 
 const Paintings = [
@@ -110,7 +143,40 @@ const Paintings = [
     img55,
     img56,
     img57,
-    img58
+    img58,
+    img59,
+    img60,
+    img61,
+    img62,
+    img63,
+    img64,
+    img65,
+    img66,
+    img67,
+    img68,
+    img69,
+    img70,
+    img71,
+    img72,
+    img73,
+    img74,
+    img75,
+    img76,
+    img77,
+    img78,
+    img79,
+    img80,
+    img81,
+    img82,
+    img83,
+    img84,
+    img85,
+    img86,
+    img87,
+    img88,
+    img89,
+    img90,
+    img91
 ]
 
 export const elmCnt = Paintings.length;

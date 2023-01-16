@@ -37,6 +37,13 @@ const ImageContainer = styled.div`
     align-items: center;
 `;
 
+const ImageCounter = styled.p`
+  font-size: 3vh;
+  font-style: italic;
+  position: relative;
+  top: -10vh;
+`;
+
 
 const mod = (a, n) => a - n * Math.floor(a / n);
 
@@ -71,6 +78,7 @@ const Gallery = () => {
         </ArrowRight>
 
       </ImageContainer>
+      <ImageCounter>{current + 1}/{elmCnt}</ImageCounter>
     </GalleryContainer>
 
   );
