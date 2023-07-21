@@ -4,6 +4,8 @@ import styled, { keyframes } from 'styled-components';
 export const Image = styled.img`
   max-width: 30vw;
   max-height: 60vh;
+  border: 10px solid burlywood;
+  box-shadow: 0px 10px 13px 10px ;
 
   @media screen and (max-width: 768px) {
     max-width: 50vh;
