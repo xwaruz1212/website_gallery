@@ -1,4 +1,5 @@
-import styled from "styled-components"
+import styled from "styled-components";
+import { Link as LinkScroll } from "react-scroll";
 
 export const StartContainer = styled.div`
     width: 100%;
@@ -19,12 +20,9 @@ export const StartH2 = styled.h2`
     position: absolute;
     text-transform: uppercase;
     top: 13vh;
-    transition-duration: 3s;
     cursor: pointer;
 
-    &:hover{
-        color: white;
-    }
+    
 
     @media screen and (max-width: 768px) {
         font-size: 4vh;
@@ -66,4 +64,21 @@ export const StartP = styled.p`
         font-size: 2.3vh;
         padding-top: 3vh;
     }
+`;
+
+export const ArrowScroll = styled(LinkScroll)`
+   display: none;
+
+
+   @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7vh;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.2s ease-in-out;
+    color: black;
+    cursor: pointer;
+   }
 `;

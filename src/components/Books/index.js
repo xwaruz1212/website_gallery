@@ -1,14 +1,16 @@
 import React, { useState } from 'react'
 import { booksList, descriptions, elmCnt } from './BooksArray';
 import styled from "styled-components";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import { FaAngleLeft, FaAngleRight, FaArrowAltCircleDown } from "react-icons/fa";
 import ImageContent, { ArrowLeft, ArrowRight } from './ImageContent';
+import { ArrowScroll } from '../StartSection/StartCompo';
 
 const BooksContainer = styled.div`
     background: #fffdd0;
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -28,12 +30,8 @@ const BooksH1 = styled.h1`
     color: black;
     letter-spacing: 0.5vw;
     text-transform: uppercase;
-    transition-duration: 3s;
     cursor: pointer;
 
-    &:hover{
-        color: white;
-    }
 
     @media screen and (max-width: 768px) {
         font-size: 7vh;
@@ -49,7 +47,7 @@ const ImageContainer = styled.div`
     text-align: center;
 
     @media screen and (max-width: 768px) {
-        height: 70vh;
+        height: 60vh;
     }
 `;
 
@@ -82,14 +80,23 @@ const Books = () => {
                             />)
                     }
                     <ArrowLeft>
-                        <FaAngleLeft onClick={prevItem} style={{ color: 'black' }} />
+                        <FaAngleLeft onClick={prevItem} style={{ color: 'rgba(0, 0, 0, 0.679)' }} />
                     </ArrowLeft>
                     <ArrowRight>
-                        <FaAngleRight onClick={nextItem} style={{ color: 'black' }} />
+                        <FaAngleRight onClick={nextItem} style={{ color: 'rgba(0, 0, 0, 0.679)' }} />
                     </ArrowRight>
 
                 </ImageContainer>
             </BooksContent>
+            <ArrowScroll
+                to="gallery"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={800}
+                delay={100}>
+                <FaArrowAltCircleDown style={{ color: 'rgba(0, 0, 0, 0.679)' }} />
+            </ArrowScroll>
         </BooksContainer>
     )
 }

@@ -17,12 +17,7 @@ const GalleryH1 = styled.h1`
   font-size: 10vh;
   letter-spacing: 0.5vw;
   text-transform: uppercase;
-  transition-duration: 3s;
-    cursor: pointer;
-
-    &:hover{
-        color: white;
-    }
+  cursor: pointer;
 
     @media screen and (max-width: 768px) {
       font-size: 7vh;
@@ -67,14 +62,13 @@ const Gallery = () => {
               key={i}
               painting={t}
               active={i === current ? true : false}
-
             />)
         }
         <ArrowLeft>
-          <FaAngleLeft onClick={prevSlide} style={{ color: 'rgba(128, 128, 128, 0.579)' }} />
+          <FaAngleLeft onClick={prevSlide} style={{ color: 'rgba(0, 0, 0, 0.679)' }} />
         </ArrowLeft>
         <ArrowRight>
-          <FaAngleRight onClick={nextSlide} style={{ color: 'rgba(128, 128, 128, 0.579)' }} />
+          <FaAngleRight onClick={nextSlide} style={{ color: 'rgba(0, 0, 0, 0.679)' }} />
         </ArrowRight>
 
       </ImageContainer>
